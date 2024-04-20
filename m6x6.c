@@ -2,10 +2,9 @@
 
 int main() {
     int matriz[6][6];
-    int valor_inferior = 2; // Valor inicial para preencher a diagonal inferior
-    int valor_superior = 1; // Valor inicial para preencher a diagonal superior
+    int valor_inferior = 2; 
+    int valor_superior = 1; 
 
-    // Preenche a matriz de acordo com as especificações
     for (int i = 0; i < 6; i++) {
         for (int j = 0; j < 6; j++) {
             if (i == j) { // Diagonal principal
@@ -20,12 +19,10 @@ int main() {
         }
     }
 
-    // Preenche a diagonal secundária com zeros
     for (int i = 0; i < 6; i++) {
         matriz[i][5 - i] = 0;
     }
 
-    // Exibe a matriz resultante
     printf("Matriz 6x6:\n");
     for (int i = 0; i < 6; i++) {
         for (int j = 0; j < 6; j++) {
